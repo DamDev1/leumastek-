@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leumastek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo"></div>
+
+            <div class="toggle" onclick="openBar()">
+                <a href="#">
+                    <div class="bar"></div>
+                </a>
+            </div>
+
+            <ul id="liContainer">
+                <div class="barClose" onclick="closeBar()"></div>
+                
+                <a href="#"><li>Home</li></a>
+                <a href="#qualities"><li>About</li></a>
+                <a href="#"><li>Shops</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>Join Us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div class="showcase">
+        <h1>Leumastek Venture</h1>
+        <p>Money Transter has never been easier</p>
+    </div>
+
+    <div class="qualities" id="qualities">
+        <h2>Why Leumastek?</h2>
+
+        <div class="qualityBox">
+            <div class="qualityBoxImg">
+                
+            </div>
+
+            <div class="qualityBoxText">
+               <h1>Safe Tranfer</h1>
+               <p>We make sure every transfer is done <b>accurately</b>. Safety for your cash transaction is out outmost concern. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptas hic corporis vitae exercitationem quas nemo magni. Ab a, iusto voluptates tenetur dolores ducimus sequi, beatae officia vero doloremque quos?</p>
+               <button>Learn More</button>
+            </div>
+        </div>
+
+
+        <div class="qualityBox">
+            <div class="qualityBoxImg"></div>
+
+            <div class="qualityBoxText">
+               <h1>Fast Transation</h1>
+               <p>We understand how important your time is to you. So at <b>LEUMASTEK</b> we dont just save your money, we save your time!,Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptas hic corporis vitae exercitationem quas nemo magni. Ab a, iusto voluptates tenetur dolores ducimus sequi, beatae officia vero doloremque quos?</p>
+               <button>Learn More</button>
+            </div>
+
+        </div>
+
+        <div class="qualityBox">
+             <div class="qualityBoxImg"> </div>
+
+            <div class="qualityBoxText">
+               <h1>Customer Care</h1>
+               <p>When things doesn't go your way, we are always concerned! Our <b>Customer support</b> is ready to help make your experience with us better!.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptas hic corporis vitae exercitationem quas nemo magni. Ab a, iusto voluptates tenetur dolores ducimus sequi, beatae officia vero doloremque quos?</p>
+               <button>Learn More</button>
+            </div>
+        </div>
+
+        <div class="qualityBox">
+            <div class="qualityBoxImg"> </div>
+
+           <div class="qualityBoxText">
+              <h1>Tested and Trusted</h1>
+              <p>Millions of Nigerians trust us with their money. We ensure that your money is safe by complying with the highest global security standards.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptas hic corporis vitae exercitationem quas nemo magni. Ab a, iusto voluptates tenetur dolores ducimus sequi, beatae officia vero doloremque quos?</p>
+              <button>Learn More</button>
+           </div>
+       </div>
+
+       <div class="qualityBox">
+        <div class="qualityBoxImg"> </div>
+
+       <div class="qualityBoxText">
+          <h1>Simple. Quick. Reliable.</h1>
+          <p>MEnjoy a smooth and stress-free money transfer experience across all your devices.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptas hic corporis vitae exercitationem quas nemo magni. Ab a, iusto voluptates tenetur dolores ducimus sequi, beatae officia vero doloremque quos?</p>
+          <button>Learn More</button>
+       </div>
+   </div>
+
+        <div class="qualityBtnContainer">
+
+            <div class="qualityBtn" onclick="showQualities(0)">
+                <h3>Safe Tranfer</h3>
+                <p>More</p>
+            </div>
+
+            <div class="qualityBtn" onclick="showQualities(1)">
+                <h3>Customer Care</h3>
+                <p>More</p>
+            </div>
+
+            <div class="qualityBtn" onclick="showQualities(2)">
+                <h3>Fast Transaction</h3>
+                <p>More</p>
+            </div>
+            
+            <div class="qualityBtn" onclick="showQualities(3)">
+                <h3>Tested and Trusted</h3>
+                <p>More</p>
+            </div>
+
+            <div class="qualityBtn" onclick="showQualities(4)">
+                <h3>Simple. Quick.</h3>
+                <p>More</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="patners">
+        <div class="patnersText">
+            <h1>Our Patners</h1>
+            <p>Our Patners trust us to always deliver and make best use of their resources. Everyone works in harmony to make sure all ends meet and customers are happy after every service!</p>
+            <button>See Our Patners &downarrow; </button>
+        </div>
+    </div>
+
+    <div class="pay">
+        <h1>We try to make life easy by</h1>
+
+        <div class="payText">
+
+            <div class="payBox" id="send">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Send Money</h3>
+                    <p>Send money instantly to anyone with a phone number, email address or bank account. <a href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="payBox" id="request">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Request Money</h3>
+                    <p>Request money instantly from anyone with a phone number or email address.<a href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="payBox" id="remittance">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Get Remittance</h3>
+                    <p>Receive instant and secure money transfers from abroad to any Nigerian mobile phone number or bank account, using Paga.<a href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="payBox" id="bills">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Pay Bills</h3>
+                    <p>Renew your Pay TV, Internet, Electricity and so much more with Paga’s smooth bill payment service.<a href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="payBox" id="receive">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Receive Money</h3>
+                    <p>Receive money instantly from anyone with a phone number, email address or bank account.<a href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="payBox" id="airtime">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Top-up Airtime & Data</h3>
+                    <p>Complete your transaction. Confirm the details and your beneficiary will get an instant alert via text message or email.<a href="#">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="artwall">
+        <h1>Bank With Us</h1>
+        <button>Call Us Today</button>
+
+    </div>
+    <div class="patnerImg">
+        <h1>Our Patners</h1>
+        <div class="patners2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div class="footerText">
+        <h1>Our Branch</h1>
+        <p>Ilogbo Eremi Office</p>
+        <p>Oko-Afo Office</p>
+        <p>Iyesi-Agumo Office</p>
+        <p>Iyesi-Photo Office</p>
+        <p>Pota Office</p>
+    </div>
+    <div class="footerlink">
+        <h1>Our Links</h1>
+        <p>agbelemosetonji@gmail.com</p>
+        <p>agbelemosamuel@gmail.com</p>
+        <p>https://www.Leumastek.com</p>
+    </div>
+</footer>
+
+    <script src="main.js"></script>
+    <script src="tabs.js"></script>
+</body>
+</html>

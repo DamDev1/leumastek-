@@ -1,0 +1,509 @@
+:root{
+    --mainColor: #f38826;
+    --font-archivo: 'Archivo Black', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    background: url(./assests/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#logo::before{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    animation: loading 0.8s infinite ease-in-out alternate-reverse;
+}
+
+.toggle{
+    margin-top: 10px;
+    display: none;
+}
+
+.bar{
+    width: 6vw;
+    height: 6vw;
+    background: url('./assests/icons8-menu-24\ \(1\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.showcase{
+    text-align: center;
+    background: linear-gradient(to top right, var(--mainColor), rgba(255, 166, 0, 0.726)), url("./assests/office.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: var(--font-archivo);
+    color: white;
+    font-size: 1.9em;
+    width: 100%;
+    height: 100vh;
+}
+
+.showcase h1{
+    padding-top: 35vh;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.showcase p{
+    font-family: var(--font-poppins);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.qualities{
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.qualities h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--font-archivo);
+}
+
+.qualities .qualityBox{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.qualities .qualityBox .qualityBoxImg{
+    width: 20vw;
+    height: 20vw;
+    margin: 10px;
+}
+
+.qualities .qualityBox:nth-child(2) .qualityBoxImg:nth-child(1){
+    background: blue;
+}
+
+.qualities .qualityBox:nth-child(3) .qualityBoxImg:nth-child(1){
+    background: red;
+}
+
+.qualities .qualityBox:nth-child(4) .qualityBoxImg:nth-child(1){
+    background: green;
+}
+
+.qualities .qualityBox:nth-child(5) .qualityBoxImg:nth-child(1){
+    background: purple;
+}
+
+.qualities .qualityBox:nth-child(6) .qualityBoxImg:nth-child(1){
+    background: lawngreen;
+}
+
+.qualities .qualityBox .qualityBoxText{
+    width: 80%;
+    margin-left: 30px;
+}
+
+.qualities .qualityBox .qualityBoxText h1{
+    font-family: var(--font-poppins);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.qualities .qualityBox .qualityBoxText p{
+    font-size: 16px;
+    font-family: var(--font-poppins);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.qualities .qualityBox .qualityBoxText button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 2px solid #f38826;
+    background: transparent;
+}
+
+.qualities .qualityBox .qualityBoxText button:hover{
+    background: #f38826;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.qualities .qualityBtnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.qualityBtnContainer .qualityBtn{
+    text-align: center;
+    margin-top: 3em;
+    background: green;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #f38826;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+    font-size: 14px;
+}
+
+.qualityBtnContainer .qualityBtn:hover{
+    background: #f38826;
+    color: white;
+    transition: 1s;
+}
+
+.patners{
+    width: 100vw;
+    height: 40vw;
+    background: url("./assests/Agent-Banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 3em;
+}
+
+.patnersText{
+    position: absolute;
+    right: 50px;
+    width: 50%;
+    top: 15%;
+    color: white;
+}
+
+.patnersText h1{
+    font-size: 40px;
+    font-family: var(--font-archivo);
+}
+
+.patnersText p{
+    font-family: var(--font-poppins);
+    margin: 20px 0 20px 0;
+}
+
+.patnersText button{
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+.pay{
+    margin-top: 3em;
+    
+}
+
+.pay h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--font-archivo);
+}
+
+.pay .payText{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2em;
+}
+
+.payText .payBox{
+    margin: 20px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.payBox .text h3{
+    font-family: var(--font-archivo);
+    font-size: 18px;
+}
+
+.payBox .text p{
+    font-family: var(--font-poppins);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.payBox .img{
+    width: 5vw;
+    height: 5vw;
+    background: url("./assests/Send\ money.png");
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artwall{
+    width: 98.9vw;
+    height: 60vw;
+    background: url('./assests/artboard.png');
+    background-position: center;
+    background-size: contain;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.artwall h1{
+    text-align: center;
+    padding-top: 20%;
+    font-family: var(--font-archivo);
+    font-size: 2.8em;
+    color: #f38826;
+    text-shadow: 0px 0px 80px 3px var(--mainColor);
+
+}
+
+.artwall button{
+    background: white;
+    border: 1px solid var(--mainColor);
+    padding: 10px 30px;
+    border-radius: 32px;
+    font-family: var(--font-poppins);
+}
+
+.patners2 div{
+    border-radius: 2000px;
+    transform: scale(0.8)
+}
+
+
+.patnerImg h1{
+    color: #f38826;
+    margin-top: 2em;
+    padding-top: 2em;
+    font-family: var(--font-archivo);
+    font-size: 3em
+}
+.patners2{
+   display: grid;
+   grid-template-columns: repeat(4,24%);
+   background-position: center;
+   margin-left: 10%;
+   margin-top: 5em;
+}
+
+.patners2 div:nth-child(1){
+    width: 20vw;
+    height: 20vw;
+    background: url('./assests/dstv.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 2px var(--mainColor);
+}
+
+.patners2 div:nth-child(2){
+    width: 20vw;
+    height: 20vw;
+    background: url('./assests/paga.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 2px var(--mainColor);
+}
+
+.patners2 div:nth-child(3){
+    width: 20vw;
+    height: 20vw;
+    background: url('./assests/GOtvNow-removebg-preview.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 2px var(--mainColor);
+}
+
+.patners2 div:nth-child(4){
+    width: 20vw;
+    height: 20vw;
+    background: url('./assests/images-removebg-preview.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 2px var(--mainColor);
+}
+
+.patners2 div:nth-child(1)::before{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    animation: loading 2.3s infinite ease-in-out alternate-reverse;
+
+}
+
+.patners2 div:nth-child(2)::before{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    animation: loading 2.9s infinite ease-in-out alternate-reverse;
+
+}
+
+.patners2 div:nth-child(3)::before{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    animation: loading 2.3s infinite ease-in-out alternate-reverse;
+
+}
+
+.patners2 div:nth-child(4)::before{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    animation: loading 2.2s infinite ease-in-out alternate-reverse;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    background: #f38826;
+    margin-top: 10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footerText {
+    margin: 2em;
+    color: white;
+}
+
+.footerText h1 .footerlink{
+    color: white;
+    font-family: var(--font-archivo);
+    font-size: 1.5em;
+}
+.footerText p{
+    margin: 0.1em;
+    font-family: var(--font-poppins);
+}
+
+.footerlink{
+    margin: 2em;
+    color: white;
+    margin-left: 20%;
+}
+
+.footerlink p{
+    margin: 0.1em;
+    font-family: var(--font-poppins);
+}
+
+@media(max-width: 700px) {
+    header nav ul{
+        flex-direction: column;
+        position: fixed;
+        background: var(--mainColor);
+        padding: 1em;
+        width: 100%;
+        left: -110%;
+        top: 0;
+    }
+
+    .active{
+        left: 0;
+        transition: .3s;
+    }
+
+    #liContainer .barClose{
+        width: 5vw;
+        height: 5vw;
+        background: url("./assests/icons8_delete_50px_2.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    header nav ul li{
+        margin: 0;
+        margin-top: px;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        margin-right: 2em;
+    }
+
+    header nav ul li:hover{
+        background: #e49348b9;
+    }
+
+    header nav .toggle{
+        display: block;
+        margin-top: 25px;
+    }
+
+    main .qualities .qualityBox{
+        display: block;
+        margin-left: 20%;
+    }
+}
+
+
+@keyframes loading{ 
+    from{ 
+        height: 100%
+    }
+
+    to{ 
+        height: 5%;
+    }
+}
+
